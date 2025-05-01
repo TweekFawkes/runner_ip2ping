@@ -1,0 +1,20 @@
+runner:
+  name: IP to Ping
+  description: Pings the provided IP address using the system 'ping' command.
+  version: 0.0.1
+
+build:
+  commands: |
+    echo "START: Building the runner"
+    apt update
+    apt install -y iputils-ping
+    echo "END: Building the runner"
+
+webform:
+  - name: ip_address
+    prompt: IP Address
+    type: text
+
+launch:
+  type: python
+  command: app.py ${ip_address}
