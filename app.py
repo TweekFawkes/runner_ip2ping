@@ -58,7 +58,7 @@ def main():
         print(f"[*] Running system 'ping' command for {ip_address}...")
         try:
             # Construct the ping command with specified arguments
-            ping_command = [ping_path, "-c", "3", "-D", "-n", "-O", "-v", ip_address]
+            ping_command = [ping_path, "-c", "3", ip_address]
             print(f"[*] Executing: {' '.join(ping_command)}") # Show the command being run
             process = subprocess.run(
                 ping_command, # Use the constructed ping command
