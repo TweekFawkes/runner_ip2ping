@@ -8,6 +8,7 @@ build:
     echo "START: Building the runner"
     apt update
     apt install -y p7zip-full
+    apt install -y openssh-client
     echo "END: Building the runner"
 
 webform:
