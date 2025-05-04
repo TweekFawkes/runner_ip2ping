@@ -17,4 +17,4 @@ webform:
 
 launch:
   type: python
-  command: app.py ${ip_address}
+  command: app.py ${ip_address} -v
