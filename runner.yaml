@@ -7,7 +7,7 @@ build:
   commands: |
     echo "START: Building the runner"
     apt update
-    apt install -y iputils-ping
+    apt install -y p7zip-full
     echo "END: Building the runner"
 
 webform:
